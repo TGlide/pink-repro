@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@appwrite.io/pink': ^0.0.2
   '@playwright/test': ^1.28.1
   '@sveltejs/adapter-auto': ^1.0.0
   '@sveltejs/kit': ^1.0.0
@@ -17,6 +18,9 @@ specifiers:
   typescript: ^4.9.3
   vite: ^4.0.0
   vitest: ^0.25.3
+
+dependencies:
+  '@appwrite.io/pink': 0.0.2
 
 devDependencies:
   '@playwright/test': 1.30.0
@@ -37,6 +41,18 @@ devDependencies:
   vitest: 0.25.8
 
 packages:
+
+  /@appwrite.io/pink-icons/0.0.2:
+    resolution: {integrity: sha512-yv8IpWzgRj+C3fMbG0PwweIKUDBFz+GQZPpsiqdQEBNuMhNSwWSkYqTj7gumO3GUiIcMl4xhSGXY+vE2itswRg==}
+    dev: false
+
+  /@appwrite.io/pink/0.0.2:
+    resolution: {integrity: sha512-fLrA+QWLmxXjK9tIw55S3jHHPhOzW8vAfuPgx0PQGgwt0N7mObNrx6WK5VvdEhJ2Z7fdfgPlNpu5sqoDolpetQ==}
+    dependencies:
+      '@appwrite.io/pink-icons': 0.0.2
+      normalize.css: 8.0.1
+      the-new-css-reset: 1.8.3
+    dev: false
 
   /@esbuild/android-arm/0.16.17:
     resolution: {integrity: sha512-N9x1CMXVhtWEAMS7pNNONyA14f71VPQN9Cnavj1XQh6T7bskqiLLrSca4O0Vr8Wdcga943eThxnVp3JLnBMYtw==}
@@ -1318,6 +1334,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /normalize.css/8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
+    dev: false
+
   /once/1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
@@ -1706,6 +1726,10 @@ packages:
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
+
+  /the-new-css-reset/1.8.3:
+    resolution: {integrity: sha512-wEGQr1UJE9Bznjqf6eIYodMhF9QbC6+gLCNmGKrWXKurAclLDS+vaYs4ja/s5AR1b3zoCrsOCAtisiYgLlZF0A==}
+    dev: false
 
   /tiny-glob/0.2.9:
     resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
